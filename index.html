@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img
+        src="./images/bg-desktop-dark.jpg"
+        alt="background picture"
+        class="bg-img"
+      />
+    </div>
+    <div class="wrapper">
+      <div class="title">
+        <h1 class="todo">TODO</h1>
+        <span><img src="./images/icon-sun.svg" alt="light mode" /></span>
+      </div>
+      <div class="input-todo">
+        <div class="radio_button"></div>
+        <form id="form_create">
+          <input
+            type="text"
+            placeholder="Create a new todo..."
+            name="new_todo"
+          />
+        </form>
+      </div>
+      <div class="todo-list">
+        <div id="todo_list"></div>
+        <div class="todo-list-bottom">
+          <p><span id="items_left">5</span> items left</p>
+          <div class="todo-list-bottom-div" id="actions_tab">
+            <p class="todo-list-bottom-active" id="all_items">All</p>
+            <p id="all_active_items">Active</p>
+            <p id="all_completed_items">Completed</p>
+          </div>
+          <p id="clear_completed">Clear Completed</p>
+        </div>
+      </div>
+      <div
+        class="todo-list-bottom todo-list-bottom-mobile"
+        id="actions_tab_mobile"
+      >
+        <p class="todo-list-bottom-active" id="all_items_mobile">All</p>
+        <p id="all_active_items_mobile">Active</p>
+        <p id="all_completed_items_mobile">Completed</p>
+      </div>
+      <p class="drag-drop">Drag and drop to reorder the list</p>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
