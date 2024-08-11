@@ -248,4 +248,8 @@ p.todo-list-bottom-active {
   .todo-list {
     box-shadow: 0 0 0 #000;
   }
+
+  .todo-list-section-p img {
+    display: block;
+  }
 }
