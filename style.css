@@ -140,6 +140,7 @@ body {
 }
 
 .todo-list-section-p span {
+  word-break: break-all;
   cursor: text;
 }
 
